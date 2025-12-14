@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Container from "../components/Container.astro";
+---
+
+<Layout title="Showcase">
+  <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <Card
+      href="https://astro.build"
+      title="Astro"
+      body="The best way to build websites for the modern web."
+    />
+    <Card
+      href="https://docs.astro.build"
+      title="Astro Documentation"
+      body="Learn how to build with Astro and discover all of its features."
+    />
+    <Card
+      href="https://astro.build/integrations"
+      title="Astro Integrations"
+      body="Explore official integrations to add more functionality to your Astro project."
+    />
+  </ul>
+</Layout>
